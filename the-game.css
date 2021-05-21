@@ -81,6 +81,10 @@ h1 {
     'left center right';
     place-items: center;
 }
+#lets-play-btn {
+    background-color: #fff;
+    color: black;
+}
 #player1box {
 
 }
@@ -107,6 +111,8 @@ h1 {
     text-align: center;
 }
 .reset-btn {
+    background-color: #fff;
+    color: black;
     height: 80%;
     width: 80%;
 
