@@ -54,7 +54,6 @@ function gamePlay() {
     });
 
     function handleGameCellClick(event) {
-        //make a move
         if (player1 === activePlayer()) {
             player1Score.push(Number(event.target.dataset.cellIndex));
             event.target.style.backgroundColor = 'red';
@@ -63,7 +62,6 @@ function gamePlay() {
             event.target.style.backgroundColor = 'green';
         }
 
-        //check for wins
         if (player1 === activePlayer()) {
             if (player1Score.includes(winCombo[0][0]) && player1Score.includes(winCombo[0][1]) && player1Score.includes(winCombo[0][2])) {
                 console.log('Player1 Wins');
@@ -98,6 +96,7 @@ function gamePlay() {
             }
         } else if (clickCount = 8) {
             console.log("It's a draw");
+            resetBtnClick()
         }
 
         event.target.classList.add = 'clicked';
