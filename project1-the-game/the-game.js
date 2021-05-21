@@ -64,38 +64,38 @@ function gamePlay() {
 
         if (player1 === activePlayer()) {
             if (player1Score.includes(winCombo[0][0]) && player1Score.includes(winCombo[0][1]) && player1Score.includes(winCombo[0][2])) {
-                console.log('Player1 Wins');
+                prompt('Player1 Wins');
             } else if (player1Score.includes(winCombo[1][0]) && player1Score.includes(winCombo[1][1]) && player1Score.includes(winCombo[1][2])) {
-                console.log('Player1 Wins');
+                prompt('Player1 Wins');
             } else if (player1Score.includes(winCombo[2][0]) && player1Score.includes(winCombo[2][1]) && player1Score.includes(winCombo[2][2])) {
-                console.log('Player1 Wins');
+                prompt('Player1 Wins');
             } else if (player1Score.includes(winCombo[3][0]) && player1Score.includes(winCombo[3][1]) && player1Score.includes(winCombo[3][2])) {
-                console.log('Player1 Wins');
+                prompt('Player1 Wins');
             } else if (player1Score.includes(winCombo[4][0]) && player1Score.includes(winCombo[4][1]) && player1Score.includes(winCombo[4][2])) {
-                console.log('Player1 Wins');
+                prompt('Player1 Wins');
             } else if (player1Score.includes(winCombo[5][0]) && player1Score.includes(winCombo[5][1]) && player1Score.includes(winCombo[5][2])) {
-                console.log('Player1 Wins');
+                prompt('Player1 Wins');
             } else if (player1Score.includes(winCombo[6][0]) && player1Score.includes(winCombo[6][1]) && player1Score.includes(winCombo[6][2])) {
-                console.log('Player1 Wins');
+                prompt('Player1 Wins');
             }
         } else if (player2 === activePlayer()) {
             if (player2Score.includes(winCombo[0][0]) && player2Score.includes(winCombo[0][1]) && player2Score.includes(winCombo[0][2])) {
-                console.log('Player2 Wins');
+                prompt('Player2 Wins');
             } else if (player2Score.includes(winCombo[1][0]) && player2Score.includes(winCombo[1][1]) && player2Score.includes(winCombo[1][2])) {
-                console.log('Player2 Wins');
+                prompt('Player2 Wins');
             } else if (player2Score.includes(winCombo[2][0]) && player2Score.includes(winCombo[2][1]) && player2Score.includes(winCombo[2][2])) {
-                console.log('Player2 Wins');
+                prompt('Player2 Wins');
             } else if (player2Score.includes(winCombo[3][0]) && player2Score.includes(winCombo[3][1]) && player2Score.includes(winCombo[3][2])) {
-                console.log('Player2 Wins');
+                prompt('Player2 Wins');
             } else if (player2Score.includes(winCombo[4][0]) && player2Score.includes(winCombo[4][1]) && player2Score.includes(winCombo[4][2])) {
-                console.log('Player2 Wins');
+                prompt('Player2 Wins');
             } else if (player2Score.includes(winCombo[5][0]) && player2Score.includes(winCombo[5][1]) && player2Score.includes(winCombo[5][2])) {
-                console.log('Player2 Wins');
+                prompt('Player2 Wins');
             } else if (player2Score.includes(winCombo[6][0]) && player2Score.includes(winCombo[6][1]) && player2Score.includes(winCombo[6][2])) {
-                console.log('Player2 Wins');
+                prompt('Player2 Wins');
             }
         } else if (clickCount = 8) {
-            console.log("It's a draw");
+            prompt("It's a draw");
             resetBtnClick()
         }
 
