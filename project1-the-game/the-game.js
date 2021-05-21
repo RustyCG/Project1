@@ -100,10 +100,6 @@ function gamePlay() {
                 alert('Player2 Wins');
             }
         }
-        // } else if (clickCount = 8) {
-        //     alert("It's a draw");
-        //     resetBtnClick()
-        // }
 
         event.target.classList.add = 'clicked';
         clickCount++
