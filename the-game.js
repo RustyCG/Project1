@@ -54,6 +54,86 @@ function cellCheck(event) {
     return result
 }
 
+function checkWin() {
+    if (player1 === activePlayer()) {
+        if (player1Score.includes(winCombo[0][0]) && player1Score.includes(winCombo[0][1]) && player1Score.includes(winCombo[0][2])) {
+            alert('Player1 Wins');
+            resetBtnClick()
+            winCount.push("1")
+            return true
+        } else if (player1Score.includes(winCombo[1][0]) && player1Score.includes(winCombo[1][1]) && player1Score.includes(winCombo[1][2])) {
+            alert('Player1 Wins');
+            resetBtnClick()
+            winCount.push("1")
+            return true
+        } else if (player1Score.includes(winCombo[2][0]) && player1Score.includes(winCombo[2][1]) && player1Score.includes(winCombo[2][2])) {
+            alert('Player1 Wins');
+            resetBtnClick()
+            winCount.push("1")
+            return true
+        } else if (player1Score.includes(winCombo[3][0]) && player1Score.includes(winCombo[3][1]) && player1Score.includes(winCombo[3][2])) {
+            alert('Player1 Wins');
+            resetBtnClick()
+            winCount.push("1")
+            return true
+        } else if (player1Score.includes(winCombo[4][0]) && player1Score.includes(winCombo[4][1]) && player1Score.includes(winCombo[4][2])) {
+            alert('Player1 Wins');
+            resetBtnClick()
+            winCount.push("1")
+            return true
+        } else if (player1Score.includes(winCombo[5][0]) && player1Score.includes(winCombo[5][1]) && player1Score.includes(winCombo[5][2])) {
+            alert('Player1 Wins');
+            resetBtnClick()
+            winCount.push("1")
+            return true
+        } else if (player1Score.includes(winCombo[6][0]) && player1Score.includes(winCombo[6][1]) && player1Score.includes(winCombo[6][2])) {
+            alert('Player1 Wins');
+            resetBtnClick()
+            winCount.push("1")
+            return true
+        }
+    } else if (player2 === activePlayer()) {
+        if (player2Score.includes(winCombo[0][0]) && player2Score.includes(winCombo[0][1]) && player2Score.includes(winCombo[0][2])) {
+            alert('Player2 Wins');
+            resetBtnClick()
+            winCount.push("2")
+            return true
+        } else if (player2Score.includes(winCombo[1][0]) && player2Score.includes(winCombo[1][1]) && player2Score.includes(winCombo[1][2])) {
+            alert('Player2 Wins');
+            resetBtnClick()
+            winCount.push("2")
+            return true
+        } else if (player2Score.includes(winCombo[2][0]) && player2Score.includes(winCombo[2][1]) && player2Score.includes(winCombo[2][2])) {
+            alert('Player2 Wins');
+            resetBtnClick()
+            winCount.push("2")
+            return true
+        } else if (player2Score.includes(winCombo[3][0]) && player2Score.includes(winCombo[3][1]) && player2Score.includes(winCombo[3][2])) {
+            alert('Player2 Wins');
+            resetBtnClick()
+            winCount.push("2")
+            return true
+        } else if (player2Score.includes(winCombo[4][0]) && player2Score.includes(winCombo[4][1]) && player2Score.includes(winCombo[4][2])) {
+            alert('Player2 Wins');
+            resetBtnClick()
+            winCount.push("2")
+            return true
+        } else if (player2Score.includes(winCombo[5][0]) && player2Score.includes(winCombo[5][1]) && player2Score.includes(winCombo[5][2])) {
+            alert('Player2 Wins');
+            resetBtnClick()
+            winCount.push("2")
+            return true
+        } else if (player2Score.includes(winCombo[6][0]) && player2Score.includes(winCombo[6][1]) && player2Score.includes(winCombo[6][2])) {
+            alert('Player2 Wins');
+            resetBtnClick()
+            winCount.push("2")
+            return true
+        }
+    } else {
+        return false
+    }
+}
+
 function gamePlay() {
 
     letsPlayBtn.disabled
@@ -70,96 +150,18 @@ function gamePlay() {
                 player1Score.push(Number(event.target.dataset.cellIndex));
                 clickedCells.push(Number(event.target.dataset.cellIndex));
                 event.target.style.backgroundColor = 'blue';
+                checkWin()
             } else {
                 player2Score.push(Number(event.target.dataset.cellIndex));
                 clickedCells.push(Number(event.target.dataset.cellIndex));
                 event.target.style.backgroundColor = 'red';
+                checkWin()
             }
         }
 
         if (clickCount === 8) {
             alert("It's a draw");
             resetBtnClick()
-        }
-
-        function checkWin() {
-            if (player1 === activePlayer()) {
-                if (player1Score.includes(winCombo[0][0]) && player1Score.includes(winCombo[0][1]) && player1Score.includes(winCombo[0][2])) {
-                    alert('Player1 Wins');
-                    resetBtnClick()
-                    winCount.push("1")
-                    return true
-                } else if (player1Score.includes(winCombo[1][0]) && player1Score.includes(winCombo[1][1]) && player1Score.includes(winCombo[1][2])) {
-                    alert('Player1 Wins');
-                    resetBtnClick()
-                    winCount.push("1")
-                    return true
-                } else if (player1Score.includes(winCombo[2][0]) && player1Score.includes(winCombo[2][1]) && player1Score.includes(winCombo[2][2])) {
-                    alert('Player1 Wins');
-                    resetBtnClick()
-                    winCount.push("1")
-                    return true
-                } else if (player1Score.includes(winCombo[3][0]) && player1Score.includes(winCombo[3][1]) && player1Score.includes(winCombo[3][2])) {
-                    alert('Player1 Wins');
-                    resetBtnClick()
-                    winCount.push("1")
-                    return true
-                } else if (player1Score.includes(winCombo[4][0]) && player1Score.includes(winCombo[4][1]) && player1Score.includes(winCombo[4][2])) {
-                    alert('Player1 Wins');
-                    resetBtnClick()
-                    winCount.push("1")
-                    return true
-                } else if (player1Score.includes(winCombo[5][0]) && player1Score.includes(winCombo[5][1]) && player1Score.includes(winCombo[5][2])) {
-                    alert('Player1 Wins');
-                    resetBtnClick()
-                    winCount.push("1")
-                    return true
-                } else if (player1Score.includes(winCombo[6][0]) && player1Score.includes(winCombo[6][1]) && player1Score.includes(winCombo[6][2])) {
-                    alert('Player1 Wins');
-                    resetBtnClick()
-                    winCount.push("1")
-                    return true
-                }
-            } else if (player2 === activePlayer()) {
-                if (player2Score.includes(winCombo[0][0]) && player2Score.includes(winCombo[0][1]) && player2Score.includes(winCombo[0][2])) {
-                    alert('Player2 Wins');
-                    resetBtnClick()
-                    winCount.push("2")
-                    return true
-                } else if (player2Score.includes(winCombo[1][0]) && player2Score.includes(winCombo[1][1]) && player2Score.includes(winCombo[1][2])) {
-                    alert('Player2 Wins');
-                    resetBtnClick()
-                    winCount.push("2")
-                    return true
-                } else if (player2Score.includes(winCombo[2][0]) && player2Score.includes(winCombo[2][1]) && player2Score.includes(winCombo[2][2])) {
-                    alert('Player2 Wins');
-                    resetBtnClick()
-                    winCount.push("2")
-                    return true
-                } else if (player2Score.includes(winCombo[3][0]) && player2Score.includes(winCombo[3][1]) && player2Score.includes(winCombo[3][2])) {
-                    alert('Player2 Wins');
-                    resetBtnClick()
-                    winCount.push("2")
-                    return true
-                } else if (player2Score.includes(winCombo[4][0]) && player2Score.includes(winCombo[4][1]) && player2Score.includes(winCombo[4][2])) {
-                    alert('Player2 Wins');
-                    resetBtnClick()
-                    winCount.push("2")
-                    return true
-                } else if (player2Score.includes(winCombo[5][0]) && player2Score.includes(winCombo[5][1]) && player2Score.includes(winCombo[5][2])) {
-                    alert('Player2 Wins');
-                    resetBtnClick()
-                    winCount.push("2")
-                    return true
-                } else if (player2Score.includes(winCombo[6][0]) && player2Score.includes(winCombo[6][1]) && player2Score.includes(winCombo[6][2])) {
-                    alert('Player2 Wins');
-                    resetBtnClick()
-                    winCount.push("2")
-                    return true
-                }
-            } else {
-                return false
-            }
         }
 
         event.target.classList.add = 'clicked';
