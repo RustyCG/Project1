@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="the-game.css">
-    <title>The Game</title>
-</head>
-<body>
-    <h1>Project #1: The Game</h1>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="the-game.css" />
+		<title>The Game</title>
+	</head>
+	<body>
+		<h1>Tic Tac Toe</h1>
 
-    <nav class="nav-bar">
+		<main class="main">
+			<section class="core">
+				<div class="game">
+					<div class="board" id="board">
+						<div class="cell" id="cell1" data-cell-index="1"></div>
+						<div class="cell" id="cell2" data-cell-index="2"></div>
+						<div class="cell" id="cell3" data-cell-index="3"></div>
+						<div class="cell" id="cell4" data-cell-index="4"></div>
+						<div class="cell" id="cell5" data-cell-index="5"></div>
+						<div class="cell" id="cell6" data-cell-index="6"></div>
+						<div class="cell" id="cell7" data-cell-index="7"></div>
+						<div class="cell" id="cell8" data-cell-index="8"></div>
+						<div class="cell" id="cell9" data-cell-index="9"></div>
+					</div>
+				</div>
 
-    </nav>
+				<div class="player">
+					<!-- <div class="player1box">Player 1</div>
+					<div class="player1Symbol">X</div> -->
+					<div id="letsplay">
+						<button id="lets-play-btn" type="button" enabled>Let's Play!</button>
+					</div>
+					<!-- <div class="player2box">Player 2</div>
+					<div class="player1Symbol">O</div> -->
+					<div class="reset">
+						<button class="reset-btn" type="button" enabled>Reset</button>
+					</div>
+				</div>
+			</section>
 
-    <main class="main">
-        <section class= "core">
-            <div class="game">
-                <div class="board" id= "board">
-                    <div class="cell" id="cell1" data-cell-index= "1"></div>
-                    <div class="cell" id="cell2" data-cell-index= "2"></div>
-                    <div class="cell" id="cell3" data-cell-index= "3"></div>
-                    <div class="cell" id="cell4" data-cell-index= "4"></div>
-                    <div class="cell" id="cell5" data-cell-index= "5"></div>
-                    <div class="cell" id="cell6" data-cell-index= "6"></div>
-                    <div class="cell" id="cell7" data-cell-index= "7"></div>
-                    <div class="cell" id="cell8" data-cell-index= "8"></div>
-                    <div class="cell" id="cell9" data-cell-index= "9"></div>
-                </div>
-            </div>
-
-            <div class="player">
-                <div class="player1box">Player 1</div>
-                    <div class="player1Symbol">X</div>
-                <div id="letsplay">
-                    <button id= "lets-play-btn">Let's Play!</button>
-                </div>
-                <div class="player2box">Player 2</div>
-                    <div class="player1Symbol">O</div>
-            </div>
-            
-        </section>
-
-        <aside class="aside-left">
-            <div class= "game-type">Game Type
+			<aside class="aside-left">
+				<!-- <div class= "game-type">Game Type
                 <div></div>
                 <div></div>
                 <div></div>
@@ -57,27 +55,29 @@
                 <div></div>
                 <div></div>
                 <div></div>
-            </div>
-        </aside>
+            </div> -->
+			</aside>
 
-        <aside class="aside-right">
-            <div class="timer">Timer</div>
-            <div class="adspace">Ad</div>
-            <div class="counter">Counter</div>
-            <div class="reset">
-                <button class= "reset-btn">Reset</button>
-            </div>
+			<aside class="aside-right">
+				<!-- <div class="timer">Timer</div>
+				<div class="counter">
+					<h4>Counter</h4>
+					<div class="rounds">
+						<h5>Rounds</h5>
+						<p></p>
+					</div>
+					<div class="wins">
+						<h6>Player 1</h6>
+						<p class="player1Wins"></p>
+						<h6>Player 2</h6>
+						<p class="player2Wins"></p> -->
+					</div>
+				</div>
+			</aside>
+		</main>
 
-        </aside>
-    </main>
+		<footer></footer>
+	</body>
 
-    <footer>
-
-    </footer>
-
-
-    
-</body>
-
-<script src="the-game.js"></script>
+	<script src="the-game.js"></script>
 </html>
